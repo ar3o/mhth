@@ -51,8 +51,3 @@ Dive deeper into the technology, design, and performance of the "More Human Than
     * *Learnings from developing with advanced AI and simulation tools.*
 * **[Future Roadmap: What's Next?](docs/07_Future_Roadmap.md)**
     * *Our vision for future enhancements and research directions.*
-
-
-
-This project was developed as part of the BEng Robotics, Mechatronic, and Control Engineering programme at Loughborough University.
-Creator: Archie McMurray (F130467)
