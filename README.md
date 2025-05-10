@@ -79,23 +79,3 @@ Generalization Testing: Evaluating the framework's ability to handle truly novel
 Exploring End-to-End Potential: As foundation models advance, investigating their potential to take on more direct control roles, potentially simplifying the pipeline.
 ▶️ Getting Started
 (This section provides general guidance. Specific installation and setup steps depend on the project's code structure and dependencies)
-To get started with the More Human Than Human framework:
-Clone the repository:
-git clone https://github.com/yourusername/more-human-than-human.git
-cd more-human-than-human
-Use code with caution.
-Bash
-Install NVIDIA Isaac Sim: Follow the official NVIDIA documentation to install Isaac Sim. Be aware of the significant GPU requirements.
-Configure Environment: Set up necessary environment variables for Isaac Sim and project paths.
-Install Dependencies: Install any Python dependencies (e.g., specific libraries for API calls, data processing) listed in a requirements.txt file.
-pip install -r requirements.txt
-Use code with caution.
-Bash
-Set up API Keys: Obtain API keys for the desired LLM/VLM providers (e.g., Google Cloud for Gemini, OpenAI, Anthropic) and the speech-to-text service (Deepgram) and configure them according to the project's setup (details to be provided in a separate SETUP.md or config file).
-Launch Isaac Sim: Start the Isaac Sim application.
-Run the Framework: Execute the main script that launches the framework within the Isaac Sim environment.
-python main_framework_script.py # Replace with your actual script name
-Use code with caution.
-Bash
-Interact: Use the integrated interface within Isaac Sim (or the socket server) to enter natural language commands.
-(Note: Detailed instructions on setting up Isaac Sim projects, configuring specific robots/scenes, and integrating external Python code can be complex and are often specific to the Isaac Sim version and project structure. Refer to the project's code documentation for precise steps.)
