@@ -51,31 +51,56 @@ Top Performers:
 Google Gemini 2.5 Pro: 55/60
 Anthropic Claude 3.7 Sonnet: 53/60
 OpenAI GPT-4.1: 53/60
+
 Key Findings:
+
 Leading models demonstrated strong command interpretation and logical sequencing.
+
 Gemini 2.5 Pro showed superior spatial reasoning, particularly with orientation and implicit hiding tasks, suggesting benefit from 3D data training.
+
 GPT-4.1 exhibited notable creativity and personality in handling abstract commands ("Construct something beautiful").
+
 A clear trade-off exists between model speed (latency) and plan quality, highlighting a challenge for real-time control.
+
 Prompt engineering was shown to improve plan quality, even with less capable models.
+
 Execution Evaluation (using GPT-4.1 generated plans):
+
 Successfully generated plans from GPT-4.1 were executed in the Isaac Sim environment, evaluated on Command Completion, Plan Adherence, and Error Recovery.
+
 Overall Execution Success Rate: 60%
+
 Primary Failure Cause: Execution failures were primarily linked to collisions within the cluttered environment. While the AI planned correctly, the motion planner's inability to dynamically treat non-target objects as collision obstacles (a known limitation addressed in future work) caused issues during manipulation in close proximity. Error recovery mechanisms were also found to be ineffective in these cases.
+
 🚧 Challenges & Limitations
+
 Developing this framework involved significant hurdles:
+
 Isaac Sim Complexity & Stability: The platform has a steep learning curve, high GPU VRAM requirements, and exhibited stability issues (e.g., memory leaks), significantly impacting development speed and limiting the scope of evaluation scenarios.
+
 RL Policy Integration: Successfully training DRL policies was achieved, but integrating these learned skills to be robustly callable and utilized by the high-level AI planner proved more complex than anticipated, a key unrealized goal.
+
 Execution Robustness: Reliably executing complex manipulations in clutter remains challenging due to limitations in the current motion planning integration (lack of dynamic obstacle avoidance) and nascent error recovery capabilities.
+
 Simulated Perception vs. Real: While using ground truth simplified development, moving to real-world applications requires integrating and evaluating actual sensor data and state-of-the-art real-world perception models.
+
 Benchmark Subjectivity: The evaluation scoring relied on human judgment, introducing potential bias.
+
 🌱 Future Work
+
 Based on the project's findings and limitations, key directions for future development include:
 Enhancing Execution: Implementing comprehensive real-time collision avoidance by integrating environmental objects as dynamic obstacles for the motion planner. Improving error detection and developing more sophisticated, AI-driven error recovery strategies.
+
 Integrating Real Perception: Replacing simulated perception with actual sensor data processing pipelines incorporating state-of-the-art models like SAM 2 or FoundationPose.
+
 Full RL Integration: Developing robust interfaces and mechanisms for the high-level AI to seamlessly select and execute trained DRL policies for complex, dexterous tasks.
+
 Expanding Skill Library: Adding more diverse fundamental robot skills and specialized learned policies.
+
 More Complex Scenarios: Designing and evaluating the framework on a wider range of challenging, cluttered, and dynamic environments.
+
 Generalization Testing: Evaluating the framework's ability to handle truly novel objects and situations not encountered during development.
+
 Exploring End-to-End Potential: As foundation models advance, investigating their potential to take on more direct control roles, potentially simplifying the pipeline.
-▶️ Getting Started
-(This section provides general guidance. Specific installation and setup steps depend on the project's code structure and dependencies)
+
+
