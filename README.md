@@ -1,6 +1,14 @@
 # More Human Than Human: A Multi-Modal AI Framework for Natural Language Cobot Control in Unstructured Environments
 
-![Project Banner](images/banner.png)
+
+
+
+
+https://sylariel.web.app/more-human
+
+
+
+
 
 ## 📄 Project Overview
 
